@@ -1,3 +1,5 @@
+console.log("CARA 1");
+
 let biodata = {
   nama_lengkap: "Ignasius Yuda Adhitia",
   tempat_tanggal_lahir: "Kuningan, 30 Juli 1987",
@@ -5,17 +7,36 @@ let biodata = {
   pekerjaan: "Tutor Piano",
 };
 
-console.log(biodata);
-console.log("\n");
+console.log(biodata, "\n");
 
-// perubahan pada property pekerjaan
-
+// merubah property pekerjaan
 biodata.pekerjaan = "Front End Web Developer";
+console.log(biodata, "\n");
 
-console.log(biodata);
-console.log("\n");
-
-// penambahan property hobi
-
+// menambah property hobi
 biodata.hobi = ["bermain piano", "ngoding", "menonton film"];
-console.log(biodata);
+console.log(biodata, "\n\n");
+
+// =============================
+console.log("CARA 2");
+
+const panggilBiodata = () => {
+  let biodata = {
+    nama_lengkap: "Ignasius Yuda Adhitia",
+    tempat_tanggal_lahir: "Kuningan, 30 Juli 1987",
+    umur: 34,
+    pekerjaan: "Tutor Piano",
+  };
+
+  console.log(biodata, "\n");
+
+  // merubah properti pekerjaan
+  biodata.pekerjaan = "Front End Web Developer";
+  console.log(biodata, "\n");
+
+  // menambah property hobi
+  biodata.hobi = ["bermain piano", "ngoding", "menonton film"];
+  console.log(biodata, "\n");
+};
+
+panggilBiodata();
